@@ -15,14 +15,14 @@ const ButtonStyled = styled.button`
     border: none;
     border-radius: .5rem;
     font-weight: 700;
-    background-color: var(--orange);
-    color: var(--white);
+    background-color: var(--secondaryColor);
+    color: var(--textColor);
     width: 200px;
     cursor: pointer;
 
     :hover {
-        background-color: var(--blue);
-        color: var(--black);
+        background-color: var(--primaryColor);
+        color: var(--editorColor);
     }
 `;
 

@@ -22,7 +22,7 @@ const Main = styled.div`
 const Viewer = styled.div`
     height: 100%;
     width: 100%;
-    background-color: var(--black);
+    background-color: var(--editorColor);
     border-radius: 1rem;
 `;
 

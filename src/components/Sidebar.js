@@ -41,4 +41,4 @@ const SidebarList = styled.div`
     }
 `;
 
-export default Sidebar
+export default Sidebar;

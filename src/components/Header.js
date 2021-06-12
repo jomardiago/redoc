@@ -1,12 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FaSun, FaBookOpen } from "react-icons/fa";
+import { FaSun, FaMoon, FaBookOpen } from "react-icons/fa";
 
-function Header() {
+function Header({theme, setTheme}) {
+    function toggleTheme() {
+        setTheme(theme === 'dark-theme' ? 'light-theme' : 'dark-theme');
+    }
+
     return (
         <HeaderStyled>
             <Brand><span className="brand-re">Re</span><span className="brand-doc">Doc</span><FaBookOpen /></Brand>
-            <FaSun />
+            {
+                theme === 'dark-theme' ? <FaSun onClick={toggleTheme} /> : <FaMoon onClick={toggleTheme} />
+            }
         </HeaderStyled>
     );
 }
@@ -21,11 +27,11 @@ const HeaderStyled = styled.header`
 
     svg {
         font-size: 1.3rem;
-        fill: var(--orange);
+        fill: var(--secondaryColor);
         cursor: pointer;
 
         :hover {
-            fill: var(--blue);
+            fill: var(--primaryColor);
         }
     }
 `;
@@ -37,15 +43,15 @@ const Brand = styled.h1`
     align-items: center;
 
     .brand-re {
-        color: var(--blue);
+        color: var(--primaryColor);
     }
 
     .brand-doc {
-        color: var(--orange);
+        color: var(--secondaryColor);
     }
 
     svg {
-        fill: var(--white);
+        fill: var(--textColor);
         margin-left: .5rem;
     }
 `;

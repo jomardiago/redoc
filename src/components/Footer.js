@@ -28,7 +28,7 @@ const FooterTag = styled.h4`
 
     svg {
         margin-left: .5rem;
-        fill: var(--orange);
+        fill: var(--secondaryColor);
     }
 `;
 
