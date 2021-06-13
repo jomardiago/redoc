@@ -12,10 +12,10 @@ function Footer() {
 
 const FooterStyled = styled.div`
     text-align: center;
-    width: 80%;
+    width: 82%;
     height: 7vh;
     background-color: var(--bgColor);
-    margin-left: 20%;
+    margin-left: 18%;
     display: flex;
     justify-content: center;
     align-items: center;
