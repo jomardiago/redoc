@@ -2,12 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from './Button';
 
-function Sidebar() {
+function Sidebar({displayDocument}) {
     return (
         <SideBarStyled>
             <SidebarHeader>Documentations</SidebarHeader>
             <SidebarList>
-                <Button>Log4js Context ID</Button>
+                <Button onClick={() => displayDocument('loggerNotes')}>Log4js Context ID</Button>
                 <Button>Log4js Masking</Button>
                 <Button>Zero Day Script</Button>
                 <Button>New Entitlement</Button>

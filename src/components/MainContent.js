@@ -1,19 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import ReactMarkdown from 'react-markdown';
-import LoggerNotes from '../documents/LoggerNotes.md';
 
-function MainContent() {
-    const [markdown, setMarkdown] = React.useState();
-
-    React.useEffect(() => {
-        fetch(LoggerNotes).then(res => {
-            return res.text();
-        }).then(text => {
-            setMarkdown(text);
-        });
-    }, []);
-
+function MainContent({markdown}) {
     return (
         <Main>
             <Viewer>
@@ -47,7 +36,7 @@ const Viewer = styled.div`
     }
 
     pre {
-        border: 1px solid var(--primaryColor);
+        border: 1px solid var(--secondaryColor);
         padding: 1rem;
         border-radius: 1rem;
         font-size: 1rem;
