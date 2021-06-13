@@ -14,11 +14,11 @@ const ButtonStyled = styled.button`
     font-size: 1rem;
     border: none;
     border-radius: .5rem;
-    font-weight: 700;
     background-color: var(--secondaryColor);
     color: var(--textColor);
     width: 200px;
     cursor: pointer;
+    outline: none;
 
     :hover {
         background-color: var(--primaryColor);
