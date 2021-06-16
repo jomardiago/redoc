@@ -4,10 +4,16 @@ import Sidebar from './components/Sidebar';
 import Container from './components/Container';
 import MainContent from './components/MainContent';
 import Footer from './components/Footer';
-import LoggerNotes from './documents/LoggerNotes.md';
+import roStory from './documents/log4js-masking/roStory.md';
+import assumptions from './documents/log4js-masking/assumptions.md';
+import commonLogFormats from './documents/log4js-masking/commonLogFormats.md';
+import solution from './documents/log4js-masking/solution.md';
 
 const documents = [
-  {id: 'loggerNotes', markdown: LoggerNotes}
+  {id: 'roStory', markdown: roStory},
+  {id: 'assumptions', markdown: assumptions},
+  {id: 'commonLogFormats', markdown: commonLogFormats},
+  {id: 'solution', markdown: solution},
 ];
 
 function App() {

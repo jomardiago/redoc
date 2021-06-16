@@ -26,7 +26,7 @@ const Viewer = styled.div`
     height: 100%;
     width: 100%;
     background-color: var(--editorColor);
-    overflow-y: scroll;
+    overflow-y: auto;
     padding: 1rem 2rem;
     border: 1px solid var(--secondaryColor);
 
@@ -35,12 +35,18 @@ const Viewer = styled.div`
         line-height: 1.5rem;
     }
 
+    h1, h2 {
+        line-height: 2.5rem;
+        border-bottom: 1px solid var(--secondaryColor);
+        padding-bottom: 1rem;
+    }
+
     pre {
         border: 1px solid var(--secondaryColor);
         padding: 1rem;
-        border-radius: 1rem;
         font-size: 1rem;
         background-color: var(--bgColor);
+        overflow: auto;
     }
 `;
 

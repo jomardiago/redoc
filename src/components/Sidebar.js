@@ -7,11 +7,10 @@ function Sidebar({displayDocument}) {
         <SideBarStyled>
             <SidebarHeader>Documentations</SidebarHeader>
             <SidebarList>
-                <Button onClick={() => displayDocument('loggerNotes')}>Log4js Context ID</Button>
-                <Button>Log4js Masking</Button>
-                <Button>Zero Day Script</Button>
-                <Button>New Entitlement</Button>
-                <Button>Audit Log</Button>
+                <Button onClick={() => displayDocument('roStory')}>RO Story</Button>
+                <Button onClick={() => displayDocument('assumptions')}>Only Assumption</Button>
+                <Button onClick={() => displayDocument('commonLogFormats')}>Common Formats</Button>
+                <Button onClick={() => displayDocument('solution')}>Solution</Button>
             </SidebarList>
         </SideBarStyled>
     );

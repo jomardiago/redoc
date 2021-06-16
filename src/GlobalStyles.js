@@ -1,14 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
-    ${'' /* :root {
-        --bgColor: #001730;
-        --blue: #4AD7D1;
-        --orange: #FE4A49;
-        --white: #FFFFFF;
-        --black: #000000;
-    } */}
-
     .dark-theme {
         --bgColor: #001730;
         --primaryColor: #4AD7D1;
@@ -30,7 +22,6 @@ const GlobalStyles = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         text-decoration: none;
-        list-style: none;
     }
 
     body {
