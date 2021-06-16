@@ -2,16 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from './Button';
 
-function Sidebar({displayDocument}) {
+function Sidebar({displayDocument, documents}) {
     return (
         <SideBarStyled>
             <SidebarHeader>Documentations</SidebarHeader>
             <SidebarList>
-                <Button onClick={() => displayDocument('roStory')}>RO Story</Button>
-                <Button onClick={() => displayDocument('assumptions')}>Only Assumption</Button>
-                <Button onClick={() => displayDocument('commonLogFormats')}>Common Formats</Button>
-                <Button onClick={() => displayDocument('solution')}>Solution</Button>
-                <Button onClick={() => displayDocument('exampleMessage')}>Example</Button>
+                {
+                    documents.map(doc => (
+                        <Button onClick={() => displayDocument(doc.id)}>{doc.title}</Button>
+                    ))
+                }
             </SidebarList>
         </SideBarStyled>
     );

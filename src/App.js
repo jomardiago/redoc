@@ -11,11 +11,11 @@ import solution from './documents/log4js-masking/solution.md';
 import exampleMessage from './documents/log4js-masking/exampleMessage.md';
 
 const documents = [
-  {id: 'roStory', markdown: roStory},
-  {id: 'assumptions', markdown: assumptions},
-  {id: 'commonLogFormats', markdown: commonLogFormats},
-  {id: 'solution', markdown: solution},
-  {id: 'exampleMessage', markdown: exampleMessage},
+  {id: 'roStory', title: 'RO Story', markdown: roStory},
+  {id: 'assumptions', title: 'Only Assumption', markdown: assumptions},
+  {id: 'commonLogFormats', title: 'Log Formats', markdown: commonLogFormats},
+  {id: 'solution', title: 'Solution', markdown: solution},
+  {id: 'exampleMessage', title: 'Example', markdown: exampleMessage}
 ];
 
 function App() {
@@ -38,7 +38,7 @@ function App() {
   return (
     <>
       <Header theme={theme} setTheme={setTheme} />
-      <Sidebar displayDocument={displayDocument} />
+      <Sidebar displayDocument={displayDocument} documents={documents} />
       <Container>
         <MainContent markdown={markdown} />
         <Footer />
