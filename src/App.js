@@ -8,12 +8,14 @@ import roStory from './documents/log4js-masking/roStory.md';
 import assumptions from './documents/log4js-masking/assumptions.md';
 import commonLogFormats from './documents/log4js-masking/commonLogFormats.md';
 import solution from './documents/log4js-masking/solution.md';
+import exampleMessage from './documents/log4js-masking/exampleMessage.md';
 
 const documents = [
   {id: 'roStory', markdown: roStory},
   {id: 'assumptions', markdown: assumptions},
   {id: 'commonLogFormats', markdown: commonLogFormats},
   {id: 'solution', markdown: solution},
+  {id: 'exampleMessage', markdown: exampleMessage},
 ];
 
 function App() {

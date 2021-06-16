@@ -11,6 +11,7 @@ function Sidebar({displayDocument}) {
                 <Button onClick={() => displayDocument('assumptions')}>Only Assumption</Button>
                 <Button onClick={() => displayDocument('commonLogFormats')}>Common Formats</Button>
                 <Button onClick={() => displayDocument('solution')}>Solution</Button>
+                <Button onClick={() => displayDocument('exampleMessage')}>Example</Button>
             </SidebarList>
         </SideBarStyled>
     );
